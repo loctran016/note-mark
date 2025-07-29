@@ -7,8 +7,8 @@ definePageMeta({
 
 const slug = useRoute().params.slug;
 // const relativeSlug = slug.split("/").slice(-3);
-const { data: post } = await useAsyncData(`blog-${slug}`, () => {
-  return queryCollection("blog").path(`/blog/${slug}`).first();
+const { data: post } = await useAsyncData(`y2-${slug}`, () => {
+  return queryCollection("y2").path(`/y2/${slug}`).first();
 });
 
 useSeoMeta({
@@ -18,7 +18,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <!-- Render the blog post as Prose & Vue components -->
+  <!-- Render the y2 post as Prose & Vue components -->
   <ContentRenderer v-if="post" :value="post" />
   <NotFound v-else></NotFound>
 </template>

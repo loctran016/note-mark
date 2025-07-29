@@ -4,7 +4,7 @@
   >
     <h2><NuxtLink to="/">Note Mark</NuxtLink></h2>
     <ul class="flex">
-      <li><NuxtLink to="/blog">Y2</NuxtLink></li>
+      <li><NuxtLink to="/y2">Y2</NuxtLink></li>
     </ul>
   </nav>
 </template>
