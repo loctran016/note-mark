@@ -2,11 +2,19 @@ import { defineCollection, defineContentConfig, z } from "@nuxt/content";
 
 export default defineContentConfig({
   collections: {
-    y2: defineCollection({
+    content: defineCollection({
       type: "page",
-      source: "y2/*.md",
+      source: "**/*.md",
       schema: z.object({
         date: z.string(),
+        title: z.string(),
+      }),
+    }),
+    json: defineCollection({
+      type: "data",
+      source: "**/*.json",
+      schema: z.object({
+        name: z.object({}),
       }),
     }),
   },

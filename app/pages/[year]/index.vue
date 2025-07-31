@@ -1,8 +1,9 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData("y2-lists", () =>
-  queryCollection("y2").all()
+const route = useRoute();
+const year = route.params.year;
+const { data: posts } = await useAsyncData(`content-${year}`, () =>
+  queryCollection("content").where("path", "LIKE", `/${year}/%`).all()
 );
-console.log(posts.value);
 </script>
 
 <template>
