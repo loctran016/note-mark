@@ -4,7 +4,7 @@ import defaultLayout from "./default.vue";
 
 <template>
   <defaultLayout>
-    <main>
+    <main class="prose lg:prose-lg mx-auto mt-10">
       <slot></slot>
     </main>
   </defaultLayout>

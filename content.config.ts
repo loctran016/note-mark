@@ -14,7 +14,13 @@ export default defineContentConfig({
       type: "data",
       source: "**/*.json",
       schema: z.object({
-        name: z.object({}),
+        data: z.array(
+          z.object({
+            name: z.string(),
+            path: z.string(),
+          })
+        ),
+        year: z.number(),
       }),
     }),
   },

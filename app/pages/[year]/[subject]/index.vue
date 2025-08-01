@@ -8,10 +8,17 @@ const { data: posts } = await useAsyncData(`content-${year}`, () =>
 </script>
 
 <template>
-  <div>
-    <ul>
+  <div class="mx-auto w-4/5 mt-10">
+    <ul class="grid grid-cols-6 space-x-2">
       <li v-for="post in posts" :key="post.id">
-        <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
+        <PostCard>
+          <NuxtLink :to="post.path"
+            ><h2 class="font-[Montserrat] font-bold text-xl">
+              {{ post.title }}
+            </h2>
+            <p>{{ post.date }}</p>
+          </NuxtLink>
+        </PostCard>
       </li>
     </ul>
   </div>
