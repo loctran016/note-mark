@@ -23,7 +23,7 @@ jobs:
         with:
           submodules: "recursive"
       - uses: oven-sh/setup-bun@v2
-      - run: bun install
+      - run: bun install && bun add -D better-sqlite3
       - name: Build
         run: bun run build --logLevel=verbose
         env:
@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public/
+          path: .output/public/
 
   deploy:
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
