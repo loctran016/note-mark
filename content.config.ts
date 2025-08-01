@@ -8,6 +8,7 @@ export default defineContentConfig({
       schema: z.object({
         date: z.string(),
         title: z.string(),
+        draft: z.boolean().default(false),
       }),
     }),
     json: defineCollection({

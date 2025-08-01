@@ -2,7 +2,10 @@
 const route = useRoute();
 const year = route.params.year;
 const { data: posts } = await useAsyncData(`content-${year}`, () =>
-  queryCollection("content").where("path", "LIKE", `/${year}/%`).all()
+  queryCollection("content")
+    .where("path", "LIKE", `/${year}/%`)
+    .where("draft", "=", false)
+    .all()
 );
 </script>
 

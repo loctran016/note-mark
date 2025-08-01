@@ -3,18 +3,22 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  //   content: {
-  //     build: {
-  //       markdown: {
-  //         remarkPlugins: {},
-  //         rehypePlugins: {},
-  //         toc: {
-  //           depth: 3, // include h3 headings
-  //         },
-  //         highlight: false,
-  //       },
-  //     },
-  //   },
+  nitro: {
+    static: true,
+  },
+
+  content: {
+    build: {
+      markdown: {
+        remarkPlugins: {},
+        rehypePlugins: {},
+        toc: {
+          depth: 3, // include h3 headings
+        },
+        highlight: false,
+      },
+    },
+  },
 
   modules: [
     "@nuxt/content",

@@ -12,7 +12,10 @@ const subject = route.params.subject;
 const year = route.params.year;
 // const relativeSlug = slug.split("/").slice(-3);
 const { data: post } = await useAsyncData(`content-${slug}`, () => {
-  return queryCollection("content").path(`/${year}/${subject}/${slug}`).first();
+  return queryCollection("content")
+    .path(`/${year}/${subject}/${slug}`)
+    .where("draft", "=", false)
+    .first();
 });
 
 useSeoMeta({
