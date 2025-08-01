@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+	experimental: {
+  		sqliteConnector: 'native',
+	},
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: {
