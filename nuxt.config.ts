@@ -2,9 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-
-  nitro: {
-    static: true,
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: {
+      name: "slide",
+      mode: "out-in", // default
+    },
   },
 
   content: {
