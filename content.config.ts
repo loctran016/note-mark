@@ -14,15 +14,13 @@ export default defineContentConfig({
     json: defineCollection({
       type: "data",
       source: "**/*.json",
-      schema: z.object({
-        data: z.array(
-          z.object({
-            name: z.string(),
-            path: z.string(),
-          })
-        ),
-        year: z.number(),
-      }),
+      schema:z.object({
+          data: z.record(z.string(), z.object({
+              name: z.string(),
+              startDate: z.string().optional(),
+              endDate: z.string().optional(),
+        }))
+      })
     }),
   },
 });

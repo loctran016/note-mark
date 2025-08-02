@@ -1,13 +1,11 @@
 {
   "year": 2,
-  "data": [
-    {
-      "path": "dk-kc",
+  "data": {
+    "dk-kc":{
       "name": "MD - Đề kháng Ký chủ"
     },
-    {
-      "path": "mddc",
+    "mddc":{
       "name": "Miễn Dịch đại cương"
     }
-  ]
+  }
 }

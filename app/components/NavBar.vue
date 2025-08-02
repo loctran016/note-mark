@@ -1,15 +1,14 @@
 <script setup lang="ts">
 // import DropDown from "./DropDown.vue";
-const colorMode = useColorMode()
+// const colorMode = useColorMode()
 </script>
 
 <template>
   <nav
     class="w-screen flex items-center px-4 py-6 text-xl shadow-sm shadow-slate-300 drop-shadow-sm sticky top-0"
   >
-    <h2 class="font-[Montserrat] text-2xl ml-4 font-bold flex-grow">
-      <NuxtLink to="/">LocTor Log</NuxtLink>
-    </h2>
+    <h2 class="font-[Montserrat] text-2xl ml-4 font-bold flex-grow <md:hidden ">
+      <NuxtLink to="/">LocTor Log</NuxtLink> </h2>
     <DropDown>
       <template #title><span class="">Năm học</span></template>
       <ul>
