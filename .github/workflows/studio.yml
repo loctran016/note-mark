@@ -24,6 +24,8 @@ jobs:
           submodules: "recursive"
       - uses: pnpm/action-setup@v4
         name: Install pnpm
+        with:
+          version: latest
         id: pnpm-install
       - uses: actions/setup-node@v4
         with:
