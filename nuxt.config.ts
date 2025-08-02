@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-	experimental: {
-  		sqliteConnector: 'native',
-	},
+  experimental: {
+    sqliteConnector: "native",
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: {
@@ -33,5 +33,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
   ],
 });

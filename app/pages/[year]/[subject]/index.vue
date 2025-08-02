@@ -8,6 +8,10 @@ const { data: posts } = await useAsyncData(`content-${year}`, () =>
     .where("draft", "=", false)
     .all()
 );
+
+useSeoMeta({
+  title: `LocTor Log | ${String(year).toUpperCase()}`,
+});
 </script>
 
 <template>
