@@ -12,17 +12,19 @@ console.log("Subjects values");
 </script>
 
 <template>
-  <ul class="grid grid-cols-4 space-x-2 items-center align-center">
-    <li
-      v-for="([path, content],index) in Object.entries(subjects?.data ?? []) "
-      class="card py-6 px-4 bg-primary max-content"
-      :key="index"
-    >
-      <NuxtLink :to="`/y${currentSchoolYear}/${path}`"
-        ><div class="card">
-          <h2 class="card-title">{{ content?.name }}</h2>
-        </div>
-      </NuxtLink>
-    </li>
-  </ul>
+    <main class="grid grid-flow-col grid-cols-2">
+        <ul class="grid grid-flow-col auto-cols-max space-x-2 items-center align-center mx-auto lg:mt-20">
+          <li
+            v-for="([path, content],index) in Object.entries(subjects?.data ?? []) "
+            class="card py-6 px-4 bg-primary max-content"
+            :key="index"
+          >
+            <NuxtLink :to="`/y${currentSchoolYear}/${path}`"
+              ><PostCard>
+                <h2 class="font-bold lg:text-xl py-4 px-2">{{ content?.name }}</h2>
+              </PostCard>
+            </NuxtLink>
+          </li>
+        </ul>
+    </main>
 </template>
