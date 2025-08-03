@@ -25,9 +25,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1 class="font-[Montserrat]">{{ post.title }}</h1>
+  <h1 class="font-[Montserrat] mx-auto max-w-4/5 text-xl lg:text-3xl">{{ post.title }}</h1>
   <p class="italic text-gray">{{ post.date }}</p>
   <!-- Render the content post as Prose & Vue components -->
-  <ContentRenderer v-if="post" :value="post" />
-  <NotFound v-else></NotFound>
+   <article class="prose lg:prose-lg ">
+
+       <ContentRenderer v-if="post" :value="post" />
+       <NotFound v-else></NotFound>
+   </article>
 </template>
