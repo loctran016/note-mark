@@ -17,6 +17,7 @@ export default defineContentConfig({
       schema:z.object({
           data: z.record(z.string(), z.object({
               name: z.string(),
+              color: z.enum(['black','red', 'blue', 'green', 'purple', 'pink', 'slate', 'gray', 'zinc', 'neutral', 'stone', 'orange', 'amber', 'yellow', 'lime', 'emerald', 'teal', 'cyan', 'sky', 'indigo', 'violet', 'fuchsia', 'rose']),
               startDate: z.string().optional(),
               endDate: z.string().optional(),
         }))

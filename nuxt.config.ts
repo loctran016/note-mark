@@ -24,6 +24,13 @@ export default defineNuxtConfig({
       }
   },
 
+  tailwindcss: {
+    cssPath: [`~/assets/css/tailwind.css`, { injectPosition: "first" }],
+    // config: {},
+    // viewer: true,
+    // exposeConfig: false,
+  },
+
   content: {
     experimental: { sqliteConnector: "native" },
     build: {
@@ -53,5 +60,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     '@nuxtjs/seo',
+      // "nuxt-svgo",
+    // not sure why?
   ],
 });
