@@ -23,17 +23,15 @@ useSeoMeta({
 <template>
     <h2 class="text-2xl  dark:text-gray-200 cursor-pointer font-bold mb-6 ml-4 lg:ml-10 xl:ml-20 mt-10"><NuxtLink :to="`/${year}`">{{ String(year).toUpperCase() }}</NuxtLink> / <span class="text-slate-900 dark:text-white">{{ subjects?.data[`${subject}`]?.name }}</span></h2>
   <div class="mx-auto w-4/5 mt-4 main">
-    <ul class="grid auto-cols-max grid-flow-col space-x-2">
+    <ul class="grid auto-rows-max grid-flow-col justify-items-stretch gap-2">
       <li v-for="post in posts" :key="post.id">
         <PostCard>
-          <NuxtLink :to="post.path">
-            <div class="px-4">
-              <h3 class="font-[Montserrat] font-bold lg:text-lg mt-1 lg:mt-2">
+          <NuxtLink :to="post.path" class="px-4 flex flex-col gap-2 h-full">
+              <h3 class="font-[Montserrat] font-bold lg:text-lg mt-1 lg:mt-2 flex-grow">
                 {{ post.title }}
               </h3>
-              <p class="italic mb-2">{{ post.date }}</p>
+              <p class="italic mt-auto">{{ post.date }}</p>
               <!-- <p>{{ year }}/{{ subject }}</p> -->
-            </div>
           </NuxtLink>
         </PostCard>
       </li>

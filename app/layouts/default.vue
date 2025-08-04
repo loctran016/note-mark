@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-screen min-h-screen wrapper font-[Open_Sans] dark:bg-zinc-950 text-zinc-900 dark:text-gray-100">
+  <div class="min-w-screen min-h-screen wrapper font-[Open_Sans] dark:bg-zinc-950 text-zinc-900 dark:text-gray-100 overflow-x-hidden">
     <NavBar></NavBar>
     <slot></slot>
   </div>
