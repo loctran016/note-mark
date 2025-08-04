@@ -1,6 +1,7 @@
 ---
 title: "Bài 3: Miễn dịch bẩm sinh"
 description: MD bẩm sinh là miễn dịch không đặc hiệu, tự nhiên, có từ khi sinh ra
+date: 2025-08-04
 ---
 
 ## Các thành phần
