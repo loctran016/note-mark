@@ -10,7 +10,7 @@
     <h2 class="font-[Montserrat] lg:text-2xl ml-4 font-bold flex-grow <md:hidden ">
       <NuxtLink to="/" class="flex gap-4 items-center"><NuxtImg src="/logo.svg" placeholder-class="h-6 w-6" width="50px" preload/><span class="<md:hidden">LocTor Log</span></NuxtLink> </h2>
     <DropDown>
-      <template #title><span class="">Năm học</span></template>
+      <template #title><span>Năm học</span></template>
       <ul>
         <!-- <NuxtLink :to="{ name: 'yid', params: { id: n + 1 } }" -->
         <li

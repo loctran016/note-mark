@@ -6,7 +6,7 @@ const isHovered = ref(false);
   <div
     @mouseover="isHovered = true"
     @mouseleave="isHovered = false"
-    class="cursor-pointer"
+    class="cursor-pointer grid shrink items-center"
   >
     <slot name="title"></slot>
     <div
