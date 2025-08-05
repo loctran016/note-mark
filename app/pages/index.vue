@@ -19,11 +19,11 @@ const { data: subjects } = await useAsyncData(
 </script>
 
 <template>
-    <main class="grid grid-flow-col lg:grid-cols-2 w-full h-full max-lg:place-content-center">
-        <ul class="flex flex-wrap w-4/5 mx-auto gap-3 items-center lg:my-auto">
+    <main class="grid grid-flow-col lg:grid-cols-2 max-lg:place-items-center grow">
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] w-4/5 mx-auto gap-3 items-center lg:my-auto">
           <li
             v-for="([path, content],index) in Object.entries(subjects?.data ?? []) "
-            class="h-30 rounded-lg grow shrink basis-sm"
+            class="h-30 rounded-xl pl-2"
             :class="colorsStyle[content.color as keyof typeof colorsStyle] ?? ''"
             :key="index"
           >
@@ -33,7 +33,7 @@ const { data: subjects } = await useAsyncData(
             </NuxtLink>
           </li>
         </ul>
-        <div class="bg-white dark:bg-black w-full h-full flex justify-center items-center max-lg:absolute  max-lg:top-1/2  max-lg:right-1/2 max-lg:-translate-x-1/2  max-lg:-translate-y-1/2 max-lg:-z-10">
+        <div class="bg-white dark:bg-black flex justify-center items-center max-lg:absolute max-lg:top-1/2  max-lg:right-1/2 max-lg:-translate-x-1/2  max-lg:-translate-y-1/2 max-lg:-z-10">
                  <!-- <NuxtImg src="/logo.svg" sizes="80vw lg:100px" width="500" /> -->
                   <div class="bg-white dark:bg-slate-900 rounded-lg aspect-square w-4/5 lg:w-80 shadow-md shadow-slate-800 dark:shadow-slate-700"></div>
         </div>

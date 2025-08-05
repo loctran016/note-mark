@@ -30,7 +30,7 @@ useSeoMeta({
         <p class="italic text-gray">{{ post.date }}</p>
     </div>
   <!-- Render the content post as Prose & Vue components -->
-   <article class="prose lg:prose-lg dark:prose-invert mx-auto">
+   <article class="prose lg:prose-lg dark:prose-invert mx-auto mb-14 text-gray-100">
 
        <ContentRenderer v-if="post" :value="post" />
        <NotFound v-else></NotFound>
