@@ -19,7 +19,7 @@ const { data: subjects } = await useAsyncData(
 </script>
 
 <template>
-    <main class="grid grid-flow-col grid-cols-2 w-full h-full">
+    <main class="grid grid-flow-col lg:grid-cols-2 w-full h-full max-lg:place-content-center">
         <ul class="grid w-4/5 mx-auto grid-cols-3 auto-rows-[minmax(0,1fr)] gap-2 items-center lg:my-auto">
           <li
             v-for="([path, content],index) in Object.entries(subjects?.data ?? []) "
@@ -33,9 +33,9 @@ const { data: subjects } = await useAsyncData(
             </NuxtLink>
           </li>
         </ul>
-        <div class="bg-white dark:bg-black w-full h-full flex justify-center items-center">
+        <div class="bg-white dark:bg-black w-full h-full flex justify-center items-center max-lg:absolute  max-lg:top-1/2  max-lg:right-1/2 max-lg:-translate-x-1/2  max-lg:-translate-y-1/2 max-lg:-z-10">
                  <!-- <NuxtImg src="/logo.svg" sizes="80vw lg:100px" width="500" /> -->
-                  <div class="bg-white dark:bg-slate-900 rounded-lg aspect-square w-4/5 lg:w-80 shadow-md shadow-slate-800 dark:shadow-slate-700 sha"></div>
+                  <div class="bg-white dark:bg-slate-900 rounded-lg aspect-square w-4/5 lg:w-80 shadow-md shadow-slate-800 dark:shadow-slate-700"></div>
         </div>
     </main>
 </template>
