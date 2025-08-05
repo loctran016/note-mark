@@ -20,10 +20,10 @@ const { data: subjects } = await useAsyncData(
 
 <template>
     <main class="grid grid-flow-col lg:grid-cols-2 w-full h-full max-lg:place-content-center">
-        <ul class="grid w-4/5 mx-auto grid-cols-3 auto-rows-[minmax(0,1fr)] gap-2 items-center lg:my-auto">
+        <ul class="flex flex-wrap w-4/5 mx-auto gap-3 items-center lg:my-auto">
           <li
             v-for="([path, content],index) in Object.entries(subjects?.data ?? []) "
-            class="h-30  rounded-lg"
+            class="h-30 rounded-lg grow shrink basis-sm"
             :class="colorsStyle[content.color as keyof typeof colorsStyle] ?? ''"
             :key="index"
           >

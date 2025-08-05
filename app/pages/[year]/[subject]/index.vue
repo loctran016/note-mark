@@ -26,7 +26,7 @@ useSeoMeta({
     <ul class="flex flex-wrap gap-4 justify-center lg:justify-start w-4/5 mx-auto mt-2 items-center">
       <li v-for="post in posts" :key="post.id" class="grow shrink basis-lg">
           <NuxtLink :to="post.path" class="px-4 flex flex-col gap-2 h-full rounded pb-2 bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:bg-slate-200 transition-all duration-200 cursor-pointer">
-              <h3 class="font-[Montserrat] font-bold lg:text-lg mt-1 lg:mt-2 flex-grow">
+              <h3 class="font-[Montserrat] font-bold lg:text-lg mt-2 flex-grow">
                 {{ post.title }}
               </h3>
               <p class="italic mt-auto">{{ post.date }}</p>
