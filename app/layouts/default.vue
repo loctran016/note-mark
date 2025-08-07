@@ -1,5 +1,13 @@
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: 'dark:bg-zinc-950 text-zinc-900 dark:text-gray-100'
+  }
+})
+</script>
+
 <template>
-  <div class="min-w-screen min-h-screen wrapper font-[Open_Sans] dark:bg-zinc-950 text-zinc-900 dark:text-gray-100 overflow-x-hidden">
+  <div class="min-w-screen min-h-screen wrapper font-[Open_Sans]  overflow-x-hidden">
     <NavBar></NavBar>
     <slot></slot>
   </div>
