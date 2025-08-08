@@ -21,18 +21,18 @@ Các dạng của kháng nguyên
 - **Dị ứng nguyên (allergen):** chất gây phản ứng dị ứng, xâm nhập qua đường ăn uống, hít, tiêm vào cơ thể hoặc tiếp xúc với da
 - **Bán kháng nguyên (hapten):** chỉ có tính đặc hiệu kháng nguyên,chỉ khi hapten gắn với một ptotein tải thành một phức hợp thì có tính sinh miễn dịch
 
-Tính sinh miễn dịch của kháng nguyên
+Tính sinh miễn dịch của kháng nguyên **càng tăng** khi
 
-- Tính lạ của kháng nguyên: Kháng nguyên **càng lạ** bao nhiêu thì khả năng **kích thích** tạo kháng thể càng mạnh
-- Cấu trúc hóa học của kháng nguyên: Các kháng nguyên protein và polysaccharid có tính sinh miễn dịch cao. Kháng nguyên **càng phức tạp** về cấu trúc hóa học bao nhiêu thì tính sinh miễn dịch **càng mạnh**
+- Kháng nguyên **càng lạ** thì khả năng kích thích tạo kháng thể càng mạnh
+- Kháng nguyên có cấu trúc hóa học **càng phức tạp** bao nhiêu thì tính sinh miễn dịch **càng mạnh.** Các kháng nguyên **protein và polysaccharid** có tính sinh miễn dịch cao.
 - **Đặc điểm di truyền** của cá thể: cùng một kháng nguyên nhưng các cơ thể khác nhau thì tạo ra các đáp ứng miễn dịch ở mức độ khác nhau
-- Đường đưa kháng nguyên vào cơ thể: **KN hoà tan** gây đáp ứng MD cao (tiêm trong da, dưới da, bắp thịt *> tiêm tĩnh mạch*)
+- **KN hoà tan** gây đáp ứng MD cao (tiêm trong da, dưới da, bắp thịt *> tiêm tĩnh mạch*)
 
 ### Kháng nguyên phụ thuộc Thymus
 
-Cần phải có sự tham gia của tế bào Th → kích thích được tế bào B tạo ra đáp ứng miễn dịch → KN phụ thuộc Thymus
+**KN nhóm máu, các cấu trúc protein (glycoprotein, lipoprotein)**
 
-Ví dụ: KN nhóm máu, các cấu trúc protein (glycoprotein, lipoprotein)
+Cần phải có sự tham gia của tế bào Th → kích thích được tế bào B tạo ra đáp ứng miễn dịch → KN phụ thuộc Thymus
 
 Đặc điểm đáp ứng miễn dịch đối với KN phụ thuộc Thymus:
 
@@ -47,15 +47,34 @@ Ví dụ: KN nhóm máu, các cấu trúc protein (glycoprotein, lipoprotein)
 
 ### Kháng nguyên không phụ thuộc Thymus
 
-## 2. Tế bào trình diện kháng nguyên
+**KN polysaccharid, Lipopolysaccharides endotoxin (LPS) của vi khuẩn hoặc các acid nucleic**
+
+KN kích thích trực tiếp tế bào B tạo ra đáp ứng miễn dịch mà không cần sự có mặt của tế bào T
+
+Đặc điểm là:
+
+- trí nhớ miễn dịch không có hoặc không đầy đủ
+- kháng thể chủ yếu là lớp IgM
+
+### Epitop – quyết định kháng nguyên
+
+Kháng thể hay tế bào T đặc hiệu chỉ nhận diện những phần nhỏ nhất định được cấu thành trong KN gọi là epitop. Một KN thường bao gồm nhiều epitop.
+
+Có 3 loại kháng nguyên:
+
+- Đơn giá: KN chỉ có epitop
+- Đa giá: KN chứa rất nhiều loại epitop
+- Chéo: những loại KN khác nhau nhưng chứa các epitop tương tự nhau
+
+## Tế bào trình diện kháng nguyên
 
 ### Các loại tế bào trình diện kháng nguyên
 
 ### Bắt giữ và xử lý kháng nguyên
 
-## 3. Nhóm phù hợp mô MHC lớp 1 và MHC lớp 2
+## Nhóm phù hợp mô MHC lớp 1 và MHC lớp 2
 
-## 4. Trình diện kháng nguyên bởi tế bào lympho T
+## Trình diện kháng nguyên bởi tế bào lympho T
 
 ### Trình diện kháng nguyên nội sinh qua MHC lớp 1
 
