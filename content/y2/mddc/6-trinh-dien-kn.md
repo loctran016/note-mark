@@ -68,7 +68,7 @@ Có 3 loại kháng nguyên:
 
 Tế bào T không thể trực tiếp nhận diện kháng nguyên, vì vậy cần có tế bào APC:
 
-![alt text](/y2/mddc/7-nhandien-kn.png)
+![alt text](/y2/mddc/6-nhandien-kn.png)
 
 Tế bào APC là các tế bào có chức năng bắt giữ vi sinh vật và các kháng nguyên (nội - ngoại), xử lí, và trình diện KN với Lymphocyte T để kích thích, tăng sản, biệt hoá tế bào lympho:
 
@@ -76,7 +76,9 @@ Tế bào APC là các tế bào có chức năng bắt giữ vi sinh vật và 
 - ĐTB: khởi động miễn dịch đặc hiệu thông qua MHC II trình diện cho Th
 - Lymphocyte B: thụ thể BCR bắt giữ KN, xử lý và cắt nhỏ rồi kết hợp với MHC II trình diện Th -> giúp trở thành tương bào tiết KT
 
-![Bắt giữ epitope](/y2/mddc/7-1.png)
+![Bắt giữ epitope](/y2/mddc/6-1.png)
+
+![APCs](/y2/mddc/6-apcs.png)
 
 ### Các loại tế bào trình diện kháng nguyên
 
