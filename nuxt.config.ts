@@ -59,7 +59,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
-    '@nuxtjs/seo',
+      '@nuxtjs/seo',
+    '@vueuse/nuxt',
       // "nuxt-svgo",
     // not sure why?
   ],

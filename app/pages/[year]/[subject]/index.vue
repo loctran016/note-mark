@@ -2,6 +2,9 @@
 const route = useRoute();
 const year = route.params.year;
 const subject = route.params.subject;
+
+import { useDateFormat } from '@vueuse/core'
+
 const { data: posts } = await useAsyncData(`content-${year}`, () =>
   queryCollection("content")
     .where("path", "LIKE", `/${year}/${subject}%`)
@@ -29,7 +32,7 @@ useSeoMeta({
               <h3 class="font-[Montserrat] font-bold lg:text-lg mt-2 flex-grow">
                 {{ post.title }}
               </h3>
-              <p class="italic mt-auto">{{ post.date }}</p>
+              <p class="italic mt-auto">{{ useDateFormat(post.date,'DD/MM/YYYY') }}</p>
           </NuxtLink>
       </li>
     </ul>
